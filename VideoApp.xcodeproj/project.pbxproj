@@ -11,7 +11,7 @@
 		3767497055195CF1EF54BE85 /* Pods_VideoAppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D590321D64AB887A9F9A6B9A /* Pods_VideoAppUITests.framework */; };
 		486E7FF2B7B019160512F7AF /* Pods_VideoApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1FF38E1928FD5B75C0E6ED8F /* Pods_VideoApp.framework */; };
 		7D31C9D1212CD7E4000F7CF9 /* jaccepte.png in Resources */ = {isa = PBXBuildFile; fileRef = 7D31C9D0212CD7E4000F7CF9 /* jaccepte.png */; };
-		7D31C9D3212CD8E1000F7CF9 /* molecule_ombre.png in Resources */ = {isa = PBXBuildFile; fileRef = 7D31C9D2212CD8E1000F7CF9 /* molecule_ombre.png */; };
+		7D31C9D3212CD8E1000F7CF9 /* molecule-sans_ombre.png in Resources */ = {isa = PBXBuildFile; fileRef = 7D31C9D2212CD8E1000F7CF9 /* molecule-sans_ombre.png */; };
 		7D31C9D7212F7883000F7CF9 /* envoyer.png in Resources */ = {isa = PBXBuildFile; fileRef = 7D31C9D6212F7882000F7CF9 /* envoyer.png */; };
 		7D31C9D9212F78A3000F7CF9 /* reenregistrer.png in Resources */ = {isa = PBXBuildFile; fileRef = 7D31C9D8212F78A2000F7CF9 /* reenregistrer.png */; };
 		7D31C9DB212F7A54000F7CF9 /* molecule-sans_ombre.png in Resources */ = {isa = PBXBuildFile; fileRef = 7D31C9DA212F7A53000F7CF9 /* molecule-sans_ombre.png */; };
@@ -51,13 +51,13 @@
 		1FF38E1928FD5B75C0E6ED8F /* Pods_VideoApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VideoApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		28B092659358FD9A9388E41F /* Pods-VideoApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VideoApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-VideoApp/Pods-VideoApp.debug.xcconfig"; sourceTree = "<group>"; };
 		7C3E1A7B111450B050A484CB /* Pods_VideoAppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VideoAppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		7D31C9D0212CD7E4000F7CF9 /* jaccepte.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = jaccepte.png; path = ../../../Desktop/jaccepte.png; sourceTree = "<group>"; };
-		7D31C9D2212CD8E1000F7CF9 /* molecule_ombre.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = molecule_ombre.png; path = ../../../Downloads/Graphisme/molecule_ombre.png; sourceTree = "<group>"; };
-		7D31C9D6212F7882000F7CF9 /* envoyer.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = envoyer.png; path = ../../../Downloads/Graphisme/envoyer.png; sourceTree = "<group>"; };
-		7D31C9D8212F78A2000F7CF9 /* reenregistrer.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = reenregistrer.png; path = ../../../Downloads/Graphisme/reenregistrer.png; sourceTree = "<group>"; };
-		7D31C9DA212F7A53000F7CF9 /* molecule-sans_ombre.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "molecule-sans_ombre.png"; path = "../../../Downloads/Graphisme/molecule-sans_ombre.png"; sourceTree = "<group>"; };
+		7D31C9D0212CD7E4000F7CF9 /* jaccepte.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = jaccepte.png; path = images/jaccepte.png; sourceTree = SOURCE_ROOT; };
+		7D31C9D2212CD8E1000F7CF9 /* molecule-sans_ombre.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "molecule-sans_ombre.png"; path = "images/molecule-sans_ombre.png"; sourceTree = SOURCE_ROOT; };
+		7D31C9D6212F7882000F7CF9 /* envoyer.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = envoyer.png; path = images/envoyer.png; sourceTree = SOURCE_ROOT; };
+		7D31C9D8212F78A2000F7CF9 /* reenregistrer.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = reenregistrer.png; path = images/reenregistrer.png; sourceTree = SOURCE_ROOT; };
+		7D31C9DA212F7A53000F7CF9 /* molecule-sans_ombre.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "molecule-sans_ombre.png"; path = "images/molecule-sans_ombre.png"; sourceTree = SOURCE_ROOT; };
 		7D4F2684214018B1006929C4 /* preVideoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = preVideoViewController.swift; sourceTree = "<group>"; };
-		7D4F26862140197F006929C4 /* commencer.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = commencer.png; path = "../../../Downloads/Graphisme_PNG 2/commencer.png"; sourceTree = "<group>"; };
+		7D4F26862140197F006929C4 /* commencer.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = commencer.png; path = images/commencer.png; sourceTree = SOURCE_ROOT; };
 		7D4F268821401D56006929C4 /* postVideoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = postVideoViewController.swift; sourceTree = "<group>"; };
 		7DA3F587211F637B0036DC45 /* VideoApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VideoApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7DA3F58A211F637B0036DC45 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -145,7 +145,7 @@
 				7D31C9DA212F7A53000F7CF9 /* molecule-sans_ombre.png */,
 				7D31C9D8212F78A2000F7CF9 /* reenregistrer.png */,
 				7D31C9D6212F7882000F7CF9 /* envoyer.png */,
-				7D31C9D2212CD8E1000F7CF9 /* molecule_ombre.png */,
+				7D31C9D2212CD8E1000F7CF9 /* molecule-sans_ombre.png */,
 				7DA3F591211F637D0036DC45 /* Assets.xcassets */,
 				7D31C9D0212CD7E4000F7CF9 /* jaccepte.png */,
 				7DA3F593211F637D0036DC45 /* LaunchScreen.storyboard */,
@@ -308,7 +308,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7D31C9D9212F78A3000F7CF9 /* reenregistrer.png in Resources */,
-				7D31C9D3212CD8E1000F7CF9 /* molecule_ombre.png in Resources */,
+				7D31C9D3212CD8E1000F7CF9 /* molecule-sans_ombre.png in Resources */,
 				7DA3F595211F637D0036DC45 /* LaunchScreen.storyboard in Resources */,
 				7DA3F592211F637D0036DC45 /* Assets.xcassets in Resources */,
 				7D31C9D1212CD7E4000F7CF9 /* jaccepte.png in Resources */,

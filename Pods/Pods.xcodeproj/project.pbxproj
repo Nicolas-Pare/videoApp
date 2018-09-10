@@ -1,0 +1,1307 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0676AA263326A9F851BA544E219F4CC3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */; };
+		09904B12D995CCC33DF5CECE9231A547 /* SDRecordButton.m in Sources */ = {isa = PBXBuildFile; fileRef = BAAD77EB1A5DCC570F05C75FFB376A6C /* SDRecordButton.m */; };
+		159EDABCC9750B9A8EA538B55E932DC7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */; };
+		15A373B42C5C2223C912E7BF1917CB5D /* Pods-VideoAppUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A7C60127F6FD4835DBC22844433352B /* Pods-VideoAppUITests-dummy.m */; };
+		1B7425FF388F695D65A9E48DDFA6A1F5 /* aestab.h in Headers */ = {isa = PBXBuildFile; fileRef = 144C2AFFE56A7EBC80ACE501B3A31C34 /* aestab.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		24A0A8F0539CD369165DC4B02BF885CD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */; };
+		264695348227BAB2EB45F39203B7D162 /* fileenc.h in Headers */ = {isa = PBXBuildFile; fileRef = DD3E843928FF734B22A04C79E9A7FC0B /* fileenc.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		2681330E0C88134C1740146E1521016D /* ioapi.h in Headers */ = {isa = PBXBuildFile; fileRef = D574DF6F73837097218EC0242894988E /* ioapi.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		2AA9FCEF7AE4E256F7C5507D614AD3AE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */; };
+		3A5DC9EC2908E13AC9986A9D39ABE71F /* Pods-VideoAppTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 8D51B5D6614FF60664910612CC54674A /* Pods-VideoAppTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3AB5AAB6D43687E71AE14795BE8B3410 /* SSZipArchive-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D95A250486BFFE463F69A5A46603A668 /* SSZipArchive-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3EABD424AF1FE7DD003F445823C2D092 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */; };
+		53C9DA13BAEF30CACA6C43FAB5117F81 /* ZipArchive.h in Headers */ = {isa = PBXBuildFile; fileRef = CFEDF2D3B9E940140ED8133E407403A0 /* ZipArchive.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		546DE8F383CAC8A0391BEAAB2963C853 /* unzip.c in Sources */ = {isa = PBXBuildFile; fileRef = 29D383E209F3E06A9DB4A6074A04C8C1 /* unzip.c */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		555D9EC6A68C8BBCA3AFEDB88D0C4CFF /* SSZipCommon.h in Headers */ = {isa = PBXBuildFile; fileRef = 8FD9BE6480B921786323347FE41400FC /* SSZipCommon.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5592710749D2911CFE57E63AB615CA88 /* aestab.c in Sources */ = {isa = PBXBuildFile; fileRef = B7197F37A8C15CBB0511308BBC544267 /* aestab.c */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		57C78870540D53916BD4978A64EFFA6F /* Pods-VideoAppUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 41C1B4128326DB1C7186D448F85949BD /* Pods-VideoAppUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		60BF948F2B838B9B5FB94B05632645E8 /* prng.h in Headers */ = {isa = PBXBuildFile; fileRef = B5CBA69D1710F089A3C2469744726F65 /* prng.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		624DE135EEA68996DA27E014B4F3EDAC /* zip.c in Sources */ = {isa = PBXBuildFile; fileRef = 350ADD520C4800847B412ED2A3C22989 /* zip.c */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		650F564CA7B588E4DA1D662C59A6EB87 /* minishared.h in Headers */ = {isa = PBXBuildFile; fileRef = 54C63435E31243B413F5ADFBC8FD28E8 /* minishared.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		66751A489BE680EA1301914D0FF90564 /* SDRecordButton.h in Headers */ = {isa = PBXBuildFile; fileRef = 4DD6708FBD03F9B5FA636349BA888AE2 /* SDRecordButton.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		670E299042C8102DC7EC1FD6F5B73D85 /* pwd2key.c in Sources */ = {isa = PBXBuildFile; fileRef = 3FF3455F4F2DE8F4F59FB4BD7BB2E99F /* pwd2key.c */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		6854A4ED1328068C27FA77C263E98E62 /* aeskey.c in Sources */ = {isa = PBXBuildFile; fileRef = D6CC2AC6E1F1E18B5C553C8D2AC4788F /* aeskey.c */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		68C6E9863DD38B181E2E382290195AE3 /* aesopt.h in Headers */ = {isa = PBXBuildFile; fileRef = 9DC8D9A02DA847315D6F6E8035184952 /* aesopt.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		70274B5D89135040034CE239355CD46E /* Pods-VideoApp-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B1A35A8F1D8C052497604A8AC52E9410 /* Pods-VideoApp-dummy.m */; };
+		74A7D50401C4ED2D5846DC71EEA463E4 /* SDRecordButton-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 906D32946C058C23513A58708C3EA243 /* SDRecordButton-dummy.m */; };
+		79FE97D388BD347F3E430EEA04099349 /* crypt.h in Headers */ = {isa = PBXBuildFile; fileRef = 423C8CC69FD4042E521D33BA896FAC23 /* crypt.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		7B068BD8FDFD27AA1413ED7DF00F49F6 /* aes_ni.h in Headers */ = {isa = PBXBuildFile; fileRef = C29DC00250C1638C2E270AF9959A6C0D /* aes_ni.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		7D3C1DA9E11E591AB9F5892A0575B0B6 /* ioapi.c in Sources */ = {isa = PBXBuildFile; fileRef = 12B9B551D282B2163B7B8D5028291040 /* ioapi.c */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		80D3F273614B20FDCD1725205AD6CF02 /* aes.h in Headers */ = {isa = PBXBuildFile; fileRef = 9C669A600B40E719AC54D3363E893C88 /* aes.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		815E61870CAB4C338E0B7A10231DEB17 /* aescrypt.c in Sources */ = {isa = PBXBuildFile; fileRef = 7183D062EAE8A40A34A3E3FFE5D56A54 /* aescrypt.c */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		894A8EA3F192013B5A4E1D7CF37E0563 /* sha1.h in Headers */ = {isa = PBXBuildFile; fileRef = 9BE6E36F9C4272E2D2905850D0078645 /* sha1.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		8F8E15C26B2F07E886E8F4323AF7CAD7 /* ioapi_buf.c in Sources */ = {isa = PBXBuildFile; fileRef = 3790BF5A21D838F44BAB4E3C326C9EB7 /* ioapi_buf.c */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		9D11E501132FBCDD06BC03B20E3D4C0C /* ioapi_mem.c in Sources */ = {isa = PBXBuildFile; fileRef = EDD2DA0666A3443132BC5434A2846394 /* ioapi_mem.c */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		A0853E055B666FB1F87401C5B1B9BB61 /* prng.c in Sources */ = {isa = PBXBuildFile; fileRef = 6AF111A7FABD388BCBC0679603A1A5D5 /* prng.c */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		A2719BF865265198FC7E7F199457C9BA /* brg_types.h in Headers */ = {isa = PBXBuildFile; fileRef = 017DEFFB88A28DD49A0510B6BC2953A9 /* brg_types.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		AC470F52C6AEEE95EF338559AF600615 /* sha1.c in Sources */ = {isa = PBXBuildFile; fileRef = 2FCB3B2D8DEB73AFF15AF52F45B6D0B0 /* sha1.c */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		B8A1DBD650F08385F00EA46C3E4DB16B /* pwd2key.h in Headers */ = {isa = PBXBuildFile; fileRef = 334B659AF02EC44221A0C3455C052B5A /* pwd2key.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		C28DAD77382266EE6F69929D6C49CDB8 /* crypt.c in Sources */ = {isa = PBXBuildFile; fileRef = D466EDB17B9CC9F46B1E55CA0B5D0C34 /* crypt.c */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		C7AB09728BF31321EAACC76FC884212C /* Pods-VideoAppTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8667776844095C013C773D331262C9BA /* Pods-VideoAppTests-dummy.m */; };
+		C921FD1854D9261DD9195BB85CF75898 /* ioapi_mem.h in Headers */ = {isa = PBXBuildFile; fileRef = F377F09CDE249A676585C21C6A1E1D43 /* ioapi_mem.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		D052A6F9636D618BED38D9D8063FAA67 /* SDRecordButton-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 3A9A70C0B98AA79E6BA629ABC1660245 /* SDRecordButton-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D121A22954AB895E20B7B30EF0641F2E /* SSZipArchive-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BD4BBFBB6A024D2C578818A93A5AD76 /* SSZipArchive-dummy.m */; };
+		D1751437A331E5ABA22F1DB93C2F9D43 /* aes_ni.c in Sources */ = {isa = PBXBuildFile; fileRef = E0FB08C6485C40E83F74849314E9B26D /* aes_ni.c */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		DBE3A27243093E65412D2916A6507CA3 /* SSZipArchive.h in Headers */ = {isa = PBXBuildFile; fileRef = 66EB589511D2199FCAE43D73DA193FCB /* SSZipArchive.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E2CE8D1AD50848DCBDC6C4FBF204DE58 /* hmac.c in Sources */ = {isa = PBXBuildFile; fileRef = 8793EE03DA7E537F16EBB27EFFF19CA2 /* hmac.c */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		E83D38ECA67DBD54BB5814EF8FDECF86 /* zip.h in Headers */ = {isa = PBXBuildFile; fileRef = EACB29D250D943594182C8B3E483DAAD /* zip.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		E982E24E2B1722E9212FD6DB1D907E42 /* ioapi_buf.h in Headers */ = {isa = PBXBuildFile; fileRef = ABAACF036DBB981B165692C516834422 /* ioapi_buf.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		EAB95B73FA4CAAA7FDAF9CD7F303C1BF /* unzip.h in Headers */ = {isa = PBXBuildFile; fileRef = 1A8CDCE63D64DDFA33D55E820D0D9FA7 /* unzip.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		EB08705043E6EECA0DC7433E559A8468 /* Pods-VideoApp-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 6F297F628633B29CFEE92E0529A4869D /* Pods-VideoApp-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F36DA9CF4B1EB44E8E09DDE5EA9150F6 /* minishared.c in Sources */ = {isa = PBXBuildFile; fileRef = D9227D005D98D46F3F0103C25ACF8127 /* minishared.c */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		F39C9896C8B3AA07C2A1113EC6245B7C /* fileenc.c in Sources */ = {isa = PBXBuildFile; fileRef = 70BD0D5AD701457685A99B215B473A7D /* fileenc.c */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		F47FAB5B6952F8608D37ED50C24CCF91 /* hmac.h in Headers */ = {isa = PBXBuildFile; fileRef = 2F48060724451B4F63A4D3033A597F92 /* hmac.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		F733CE773587AC5D17508BE61A90D406 /* brg_endian.h in Headers */ = {isa = PBXBuildFile; fileRef = 3CD73770A3FCEDA952713D0D0E3260AD /* brg_endian.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		FC99D710D734E1C8B17D36AE3C51DC6D /* SSZipArchive.m in Sources */ = {isa = PBXBuildFile; fileRef = 2123270D3A4C35F48535EE9778479ED4 /* SSZipArchive.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0E1068C301C37FCAB24CB7AA93A41EDF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3FC5E1DC103615CB3E421B91C0442693;
+			remoteInfo = SSZipArchive;
+		};
+		143F915B2F8620385C4CCCD483BE1000 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9700EE76589080704621A7A97E1AB8B7;
+			remoteInfo = SDRecordButton;
+		};
+		732138A9F6B8473C01ABFFC680575850 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3DC5C6B5442620EC81274A12F84730A5;
+			remoteInfo = "Pods-VideoApp";
+		};
+		994B6FA574E4D166244A16024CC4806D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3DC5C6B5442620EC81274A12F84730A5;
+			remoteInfo = "Pods-VideoApp";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		017DEFFB88A28DD49A0510B6BC2953A9 /* brg_types.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = brg_types.h; path = SSZipArchive/minizip/aes/brg_types.h; sourceTree = "<group>"; };
+		09E0E5EAED5B0F0872F8E0329133F73E /* Pods-VideoAppUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-VideoAppUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		0DAFFE3AA3A1E6705384E9C9D4505058 /* Pods-VideoAppUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-VideoAppUITests.release.xcconfig"; sourceTree = "<group>"; };
+		0DC66FE4E497BB9621518AC635A6A6A7 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		115046E9E4FA170CC2B547C7FCF86327 /* Pods-VideoAppTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-VideoAppTests-frameworks.sh"; sourceTree = "<group>"; };
+		12B9B551D282B2163B7B8D5028291040 /* ioapi.c */ = {isa = PBXFileReference; includeInIndex = 1; name = ioapi.c; path = SSZipArchive/minizip/ioapi.c; sourceTree = "<group>"; };
+		144C2AFFE56A7EBC80ACE501B3A31C34 /* aestab.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = aestab.h; path = SSZipArchive/minizip/aes/aestab.h; sourceTree = "<group>"; };
+		1A8CDCE63D64DDFA33D55E820D0D9FA7 /* unzip.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = unzip.h; path = SSZipArchive/minizip/unzip.h; sourceTree = "<group>"; };
+		1BE6DE16D353906E33E1CCE37E71D25E /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2123270D3A4C35F48535EE9778479ED4 /* SSZipArchive.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SSZipArchive.m; path = SSZipArchive/SSZipArchive.m; sourceTree = "<group>"; };
+		29D383E209F3E06A9DB4A6074A04C8C1 /* unzip.c */ = {isa = PBXFileReference; includeInIndex = 1; name = unzip.c; path = SSZipArchive/minizip/unzip.c; sourceTree = "<group>"; };
+		2CC02E358463B36F95F2B7823447BD1F /* SDRecordButton-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SDRecordButton-prefix.pch"; sourceTree = "<group>"; };
+		2F48060724451B4F63A4D3033A597F92 /* hmac.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = hmac.h; path = SSZipArchive/minizip/aes/hmac.h; sourceTree = "<group>"; };
+		2FCB3B2D8DEB73AFF15AF52F45B6D0B0 /* sha1.c */ = {isa = PBXFileReference; includeInIndex = 1; name = sha1.c; path = SSZipArchive/minizip/aes/sha1.c; sourceTree = "<group>"; };
+		334B659AF02EC44221A0C3455C052B5A /* pwd2key.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = pwd2key.h; path = SSZipArchive/minizip/aes/pwd2key.h; sourceTree = "<group>"; };
+		350ADD520C4800847B412ED2A3C22989 /* zip.c */ = {isa = PBXFileReference; includeInIndex = 1; name = zip.c; path = SSZipArchive/minizip/zip.c; sourceTree = "<group>"; };
+		3790BF5A21D838F44BAB4E3C326C9EB7 /* ioapi_buf.c */ = {isa = PBXFileReference; includeInIndex = 1; name = ioapi_buf.c; path = SSZipArchive/minizip/ioapi_buf.c; sourceTree = "<group>"; };
+		3A9A70C0B98AA79E6BA629ABC1660245 /* SDRecordButton-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SDRecordButton-umbrella.h"; sourceTree = "<group>"; };
+		3CD73770A3FCEDA952713D0D0E3260AD /* brg_endian.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = brg_endian.h; path = SSZipArchive/minizip/aes/brg_endian.h; sourceTree = "<group>"; };
+		3DB89D241B3B0C2B2FD5C4A4E3D4D887 /* Pods-VideoAppUITests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-VideoAppUITests-resources.sh"; sourceTree = "<group>"; };
+		3FF3455F4F2DE8F4F59FB4BD7BB2E99F /* pwd2key.c */ = {isa = PBXFileReference; includeInIndex = 1; name = pwd2key.c; path = SSZipArchive/minizip/aes/pwd2key.c; sourceTree = "<group>"; };
+		41C1B4128326DB1C7186D448F85949BD /* Pods-VideoAppUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-VideoAppUITests-umbrella.h"; sourceTree = "<group>"; };
+		423C8CC69FD4042E521D33BA896FAC23 /* crypt.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = crypt.h; path = SSZipArchive/minizip/crypt.h; sourceTree = "<group>"; };
+		43CA58007F9683CC0141383233C29BFD /* Pods-VideoApp.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-VideoApp.modulemap"; sourceTree = "<group>"; };
+		445E29B3F6A069BD1150A195D348F4BB /* Pods-VideoApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-VideoApp.debug.xcconfig"; sourceTree = "<group>"; };
+		4BD4BBFBB6A024D2C578818A93A5AD76 /* SSZipArchive-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SSZipArchive-dummy.m"; sourceTree = "<group>"; };
+		4BE2E4CCF785FC5346F49C8903E79898 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4DD6708FBD03F9B5FA636349BA888AE2 /* SDRecordButton.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDRecordButton.h; path = SDRecordButton/SDRecordButton.h; sourceTree = "<group>"; };
+		54C63435E31243B413F5ADFBC8FD28E8 /* minishared.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = minishared.h; path = SSZipArchive/minizip/minishared.h; sourceTree = "<group>"; };
+		55053D539A1A19708EAC43A38B889DC6 /* Pods-VideoApp-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-VideoApp-acknowledgements.markdown"; sourceTree = "<group>"; };
+		5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		5AABCAD350BC61A8F00D121D463EC211 /* Pods-VideoAppTests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-VideoAppTests-resources.sh"; sourceTree = "<group>"; };
+		5F3C6B3DA058531F9FE717AE1D6E397B /* Pods-VideoApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-VideoApp.release.xcconfig"; sourceTree = "<group>"; };
+		66EB589511D2199FCAE43D73DA193FCB /* SSZipArchive.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SSZipArchive.h; path = SSZipArchive/SSZipArchive.h; sourceTree = "<group>"; };
+		6AF111A7FABD388BCBC0679603A1A5D5 /* prng.c */ = {isa = PBXFileReference; includeInIndex = 1; name = prng.c; path = SSZipArchive/minizip/aes/prng.c; sourceTree = "<group>"; };
+		6EDAE0E80D38CA8CC4614CD4AF8DCBB5 /* Pods-VideoAppUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-VideoAppUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		6F297F628633B29CFEE92E0529A4869D /* Pods-VideoApp-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-VideoApp-umbrella.h"; sourceTree = "<group>"; };
+		70BD0D5AD701457685A99B215B473A7D /* fileenc.c */ = {isa = PBXFileReference; includeInIndex = 1; name = fileenc.c; path = SSZipArchive/minizip/aes/fileenc.c; sourceTree = "<group>"; };
+		7183D062EAE8A40A34A3E3FFE5D56A54 /* aescrypt.c */ = {isa = PBXFileReference; includeInIndex = 1; name = aescrypt.c; path = SSZipArchive/minizip/aes/aescrypt.c; sourceTree = "<group>"; };
+		79B2D5023361265332732739DC1CDE80 /* Pods-VideoAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-VideoAppTests.release.xcconfig"; sourceTree = "<group>"; };
+		8216159C628223991628595E1550B31A /* Pods-VideoApp-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-VideoApp-acknowledgements.plist"; sourceTree = "<group>"; };
+		85D43D4268BFBEC183E781CFB4002137 /* Pods-VideoAppUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-VideoAppUITests.modulemap"; sourceTree = "<group>"; };
+		8667776844095C013C773D331262C9BA /* Pods-VideoAppTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-VideoAppTests-dummy.m"; sourceTree = "<group>"; };
+		8793EE03DA7E537F16EBB27EFFF19CA2 /* hmac.c */ = {isa = PBXFileReference; includeInIndex = 1; name = hmac.c; path = SSZipArchive/minizip/aes/hmac.c; sourceTree = "<group>"; };
+		8D51B5D6614FF60664910612CC54674A /* Pods-VideoAppTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-VideoAppTests-umbrella.h"; sourceTree = "<group>"; };
+		8FD9BE6480B921786323347FE41400FC /* SSZipCommon.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SSZipCommon.h; path = SSZipArchive/SSZipCommon.h; sourceTree = "<group>"; };
+		906D32946C058C23513A58708C3EA243 /* SDRecordButton-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SDRecordButton-dummy.m"; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9A7C60127F6FD4835DBC22844433352B /* Pods-VideoAppUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-VideoAppUITests-dummy.m"; sourceTree = "<group>"; };
+		9BE6E36F9C4272E2D2905850D0078645 /* sha1.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = sha1.h; path = SSZipArchive/minizip/aes/sha1.h; sourceTree = "<group>"; };
+		9C669A600B40E719AC54D3363E893C88 /* aes.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = aes.h; path = SSZipArchive/minizip/aes/aes.h; sourceTree = "<group>"; };
+		9DC8D9A02DA847315D6F6E8035184952 /* aesopt.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = aesopt.h; path = SSZipArchive/minizip/aes/aesopt.h; sourceTree = "<group>"; };
+		A61493DCCA4D208CE2BDC77EEC28BF04 /* Pods-VideoAppTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-VideoAppTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		ABAACF036DBB981B165692C516834422 /* ioapi_buf.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ioapi_buf.h; path = SSZipArchive/minizip/ioapi_buf.h; sourceTree = "<group>"; };
+		B1A35A8F1D8C052497604A8AC52E9410 /* Pods-VideoApp-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-VideoApp-dummy.m"; sourceTree = "<group>"; };
+		B5CBA69D1710F089A3C2469744726F65 /* prng.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = prng.h; path = SSZipArchive/minizip/aes/prng.h; sourceTree = "<group>"; };
+		B7197F37A8C15CBB0511308BBC544267 /* aestab.c */ = {isa = PBXFileReference; includeInIndex = 1; name = aestab.c; path = SSZipArchive/minizip/aes/aestab.c; sourceTree = "<group>"; };
+		B7EAD391AD62B196F96C3C9660BA72C9 /* SSZipArchive.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SSZipArchive.framework; path = SSZipArchive.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B98C977D5E24E44B6F1A1D1879BC53B3 /* SSZipArchive.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = SSZipArchive.modulemap; sourceTree = "<group>"; };
+		BAAD77EB1A5DCC570F05C75FFB376A6C /* SDRecordButton.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDRecordButton.m; path = SDRecordButton/SDRecordButton.m; sourceTree = "<group>"; };
+		C29B6BC94D422DAAFE79EEEA606449FB /* SDRecordButton.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SDRecordButton.framework; path = SDRecordButton.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C29DC00250C1638C2E270AF9959A6C0D /* aes_ni.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = aes_ni.h; path = SSZipArchive/minizip/aes/aes_ni.h; sourceTree = "<group>"; };
+		C484C928F7B5FB0EFED9A4F202236176 /* Pods_VideoAppUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_VideoAppUITests.framework; path = "Pods-VideoAppUITests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C5FDC19B14EC77E73ABD91C09FBC37E5 /* Pods-VideoAppTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-VideoAppTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		CE22E378D9E2B8BC6E7E8F185718B965 /* SDRecordButton.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = SDRecordButton.modulemap; sourceTree = "<group>"; };
+		CFEDF2D3B9E940140ED8133E407403A0 /* ZipArchive.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ZipArchive.h; path = SSZipArchive/ZipArchive.h; sourceTree = "<group>"; };
+		D37754465604584ECBDD72F6A8EA3315 /* SSZipArchive-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SSZipArchive-prefix.pch"; sourceTree = "<group>"; };
+		D466EDB17B9CC9F46B1E55CA0B5D0C34 /* crypt.c */ = {isa = PBXFileReference; includeInIndex = 1; name = crypt.c; path = SSZipArchive/minizip/crypt.c; sourceTree = "<group>"; };
+		D55EC4F345C95181B6C4D048BA603E16 /* Pods-VideoApp-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-VideoApp-frameworks.sh"; sourceTree = "<group>"; };
+		D574DF6F73837097218EC0242894988E /* ioapi.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ioapi.h; path = SSZipArchive/minizip/ioapi.h; sourceTree = "<group>"; };
+		D6CC2AC6E1F1E18B5C553C8D2AC4788F /* aeskey.c */ = {isa = PBXFileReference; includeInIndex = 1; name = aeskey.c; path = SSZipArchive/minizip/aes/aeskey.c; sourceTree = "<group>"; };
+		D9227D005D98D46F3F0103C25ACF8127 /* minishared.c */ = {isa = PBXFileReference; includeInIndex = 1; name = minishared.c; path = SSZipArchive/minizip/minishared.c; sourceTree = "<group>"; };
+		D95A250486BFFE463F69A5A46603A668 /* SSZipArchive-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SSZipArchive-umbrella.h"; sourceTree = "<group>"; };
+		DA9A9D3DF944E9BD23B393A6F8A8B106 /* Pods_VideoAppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_VideoAppTests.framework; path = "Pods-VideoAppTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DAF3DB6000ABE0032FCBBAA9B8D99894 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DD3E843928FF734B22A04C79E9A7FC0B /* fileenc.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = fileenc.h; path = SSZipArchive/minizip/aes/fileenc.h; sourceTree = "<group>"; };
+		DFC1D36818C21E986F7CA9DBE30E3F0E /* Pods-VideoAppUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-VideoAppUITests-acknowledgements.plist"; sourceTree = "<group>"; };
+		E0FB08C6485C40E83F74849314E9B26D /* aes_ni.c */ = {isa = PBXFileReference; includeInIndex = 1; name = aes_ni.c; path = SSZipArchive/minizip/aes/aes_ni.c; sourceTree = "<group>"; };
+		E26F37168C2A6B8E5FB71BF1DC46234B /* SSZipArchive.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SSZipArchive.xcconfig; sourceTree = "<group>"; };
+		E29DE15AB80AF46A5B072949D69F9D4E /* Pods-VideoAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-VideoAppTests.debug.xcconfig"; sourceTree = "<group>"; };
+		E4C54F16AB79F0E10061C1F34D23654C /* SDRecordButton.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SDRecordButton.xcconfig; sourceTree = "<group>"; };
+		E79AAA52C21335995D488109420B5BC2 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EAB0A0F7438ED7ECD477EB6E865F2596 /* Pods-VideoAppUITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-VideoAppUITests-frameworks.sh"; sourceTree = "<group>"; };
+		EACB29D250D943594182C8B3E483DAAD /* zip.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = zip.h; path = SSZipArchive/minizip/zip.h; sourceTree = "<group>"; };
+		EC8BF5E4082915A34A4A30E9A2731A7B /* Pods-VideoApp-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-VideoApp-resources.sh"; sourceTree = "<group>"; };
+		EDD2DA0666A3443132BC5434A2846394 /* ioapi_mem.c */ = {isa = PBXFileReference; includeInIndex = 1; name = ioapi_mem.c; path = SSZipArchive/minizip/ioapi_mem.c; sourceTree = "<group>"; };
+		F0A51315786702862E3476AAD022B6F3 /* Pods_VideoApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_VideoApp.framework; path = "Pods-VideoApp.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F377F09CDE249A676585C21C6A1E1D43 /* ioapi_mem.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ioapi_mem.h; path = SSZipArchive/minizip/ioapi_mem.h; sourceTree = "<group>"; };
+		F5D2AF395870246EA484FCBFB7473FF3 /* Pods-VideoAppTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-VideoAppTests.modulemap"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		154600D1696D9A6FA9AAE63C1C436F68 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				159EDABCC9750B9A8EA538B55E932DC7 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		25F20549F58152D8D91B370EDB401263 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2AA9FCEF7AE4E256F7C5507D614AD3AE /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B297C3728DD5D7A8B5A6E464A095101A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3EABD424AF1FE7DD003F445823C2D092 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E795A1AE8107D363567B343294567D87 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0676AA263326A9F851BA544E219F4CC3 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F302D1B6DD2AFDF045E86CF5998EFE01 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				24A0A8F0539CD369165DC4B02BF885CD /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4302785D507657FBE5026CAF057C1793 /* Pods-VideoAppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				1BE6DE16D353906E33E1CCE37E71D25E /* Info.plist */,
+				85D43D4268BFBEC183E781CFB4002137 /* Pods-VideoAppUITests.modulemap */,
+				6EDAE0E80D38CA8CC4614CD4AF8DCBB5 /* Pods-VideoAppUITests-acknowledgements.markdown */,
+				DFC1D36818C21E986F7CA9DBE30E3F0E /* Pods-VideoAppUITests-acknowledgements.plist */,
+				9A7C60127F6FD4835DBC22844433352B /* Pods-VideoAppUITests-dummy.m */,
+				EAB0A0F7438ED7ECD477EB6E865F2596 /* Pods-VideoAppUITests-frameworks.sh */,
+				3DB89D241B3B0C2B2FD5C4A4E3D4D887 /* Pods-VideoAppUITests-resources.sh */,
+				41C1B4128326DB1C7186D448F85949BD /* Pods-VideoAppUITests-umbrella.h */,
+				09E0E5EAED5B0F0872F8E0329133F73E /* Pods-VideoAppUITests.debug.xcconfig */,
+				0DAFFE3AA3A1E6705384E9C9D4505058 /* Pods-VideoAppUITests.release.xcconfig */,
+			);
+			name = "Pods-VideoAppUITests";
+			path = "Target Support Files/Pods-VideoAppUITests";
+			sourceTree = "<group>";
+		};
+		5E0D919E635D23B70123790B8308F8EF /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		5FA26E3D2146F3DC09BCBE214A0A6B11 /* SDRecordButton */ = {
+			isa = PBXGroup;
+			children = (
+				4DD6708FBD03F9B5FA636349BA888AE2 /* SDRecordButton.h */,
+				BAAD77EB1A5DCC570F05C75FFB376A6C /* SDRecordButton.m */,
+				865EA815D6DA598E96F00AB363557DD7 /* Support Files */,
+			);
+			name = SDRecordButton;
+			path = SDRecordButton;
+			sourceTree = "<group>";
+		};
+		725F46D03AB3E4093F4A0A7BE234AD07 /* Pods-VideoApp */ = {
+			isa = PBXGroup;
+			children = (
+				DAF3DB6000ABE0032FCBBAA9B8D99894 /* Info.plist */,
+				43CA58007F9683CC0141383233C29BFD /* Pods-VideoApp.modulemap */,
+				55053D539A1A19708EAC43A38B889DC6 /* Pods-VideoApp-acknowledgements.markdown */,
+				8216159C628223991628595E1550B31A /* Pods-VideoApp-acknowledgements.plist */,
+				B1A35A8F1D8C052497604A8AC52E9410 /* Pods-VideoApp-dummy.m */,
+				D55EC4F345C95181B6C4D048BA603E16 /* Pods-VideoApp-frameworks.sh */,
+				EC8BF5E4082915A34A4A30E9A2731A7B /* Pods-VideoApp-resources.sh */,
+				6F297F628633B29CFEE92E0529A4869D /* Pods-VideoApp-umbrella.h */,
+				445E29B3F6A069BD1150A195D348F4BB /* Pods-VideoApp.debug.xcconfig */,
+				5F3C6B3DA058531F9FE717AE1D6E397B /* Pods-VideoApp.release.xcconfig */,
+			);
+			name = "Pods-VideoApp";
+			path = "Target Support Files/Pods-VideoApp";
+			sourceTree = "<group>";
+		};
+		7CCC26A3383665CEACB0D4F78AD543DD /* Pods-VideoAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				E79AAA52C21335995D488109420B5BC2 /* Info.plist */,
+				F5D2AF395870246EA484FCBFB7473FF3 /* Pods-VideoAppTests.modulemap */,
+				A61493DCCA4D208CE2BDC77EEC28BF04 /* Pods-VideoAppTests-acknowledgements.markdown */,
+				C5FDC19B14EC77E73ABD91C09FBC37E5 /* Pods-VideoAppTests-acknowledgements.plist */,
+				8667776844095C013C773D331262C9BA /* Pods-VideoAppTests-dummy.m */,
+				115046E9E4FA170CC2B547C7FCF86327 /* Pods-VideoAppTests-frameworks.sh */,
+				5AABCAD350BC61A8F00D121D463EC211 /* Pods-VideoAppTests-resources.sh */,
+				8D51B5D6614FF60664910612CC54674A /* Pods-VideoAppTests-umbrella.h */,
+				E29DE15AB80AF46A5B072949D69F9D4E /* Pods-VideoAppTests.debug.xcconfig */,
+				79B2D5023361265332732739DC1CDE80 /* Pods-VideoAppTests.release.xcconfig */,
+			);
+			name = "Pods-VideoAppTests";
+			path = "Target Support Files/Pods-VideoAppTests";
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
+				9CA7E620FD21B5AAE8BE87BB5196521A /* Pods */,
+				F1C4568B7279D53971973B3FD0B6820F /* Products */,
+				FDC8399D36DE87D653D212A42B6CE8D8 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		856693234ADA90669B47EF060052EC69 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				0DC66FE4E497BB9621518AC635A6A6A7 /* Info.plist */,
+				B98C977D5E24E44B6F1A1D1879BC53B3 /* SSZipArchive.modulemap */,
+				E26F37168C2A6B8E5FB71BF1DC46234B /* SSZipArchive.xcconfig */,
+				4BD4BBFBB6A024D2C578818A93A5AD76 /* SSZipArchive-dummy.m */,
+				D37754465604584ECBDD72F6A8EA3315 /* SSZipArchive-prefix.pch */,
+				D95A250486BFFE463F69A5A46603A668 /* SSZipArchive-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/SSZipArchive";
+			sourceTree = "<group>";
+		};
+		865EA815D6DA598E96F00AB363557DD7 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				4BE2E4CCF785FC5346F49C8903E79898 /* Info.plist */,
+				CE22E378D9E2B8BC6E7E8F185718B965 /* SDRecordButton.modulemap */,
+				E4C54F16AB79F0E10061C1F34D23654C /* SDRecordButton.xcconfig */,
+				906D32946C058C23513A58708C3EA243 /* SDRecordButton-dummy.m */,
+				2CC02E358463B36F95F2B7823447BD1F /* SDRecordButton-prefix.pch */,
+				3A9A70C0B98AA79E6BA629ABC1660245 /* SDRecordButton-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/SDRecordButton";
+			sourceTree = "<group>";
+		};
+		8ACA57C3731C4995091B5AB8155839E1 /* SSZipArchive */ = {
+			isa = PBXGroup;
+			children = (
+				9C669A600B40E719AC54D3363E893C88 /* aes.h */,
+				E0FB08C6485C40E83F74849314E9B26D /* aes_ni.c */,
+				C29DC00250C1638C2E270AF9959A6C0D /* aes_ni.h */,
+				7183D062EAE8A40A34A3E3FFE5D56A54 /* aescrypt.c */,
+				D6CC2AC6E1F1E18B5C553C8D2AC4788F /* aeskey.c */,
+				9DC8D9A02DA847315D6F6E8035184952 /* aesopt.h */,
+				B7197F37A8C15CBB0511308BBC544267 /* aestab.c */,
+				144C2AFFE56A7EBC80ACE501B3A31C34 /* aestab.h */,
+				3CD73770A3FCEDA952713D0D0E3260AD /* brg_endian.h */,
+				017DEFFB88A28DD49A0510B6BC2953A9 /* brg_types.h */,
+				D466EDB17B9CC9F46B1E55CA0B5D0C34 /* crypt.c */,
+				423C8CC69FD4042E521D33BA896FAC23 /* crypt.h */,
+				70BD0D5AD701457685A99B215B473A7D /* fileenc.c */,
+				DD3E843928FF734B22A04C79E9A7FC0B /* fileenc.h */,
+				8793EE03DA7E537F16EBB27EFFF19CA2 /* hmac.c */,
+				2F48060724451B4F63A4D3033A597F92 /* hmac.h */,
+				12B9B551D282B2163B7B8D5028291040 /* ioapi.c */,
+				D574DF6F73837097218EC0242894988E /* ioapi.h */,
+				3790BF5A21D838F44BAB4E3C326C9EB7 /* ioapi_buf.c */,
+				ABAACF036DBB981B165692C516834422 /* ioapi_buf.h */,
+				EDD2DA0666A3443132BC5434A2846394 /* ioapi_mem.c */,
+				F377F09CDE249A676585C21C6A1E1D43 /* ioapi_mem.h */,
+				D9227D005D98D46F3F0103C25ACF8127 /* minishared.c */,
+				54C63435E31243B413F5ADFBC8FD28E8 /* minishared.h */,
+				6AF111A7FABD388BCBC0679603A1A5D5 /* prng.c */,
+				B5CBA69D1710F089A3C2469744726F65 /* prng.h */,
+				3FF3455F4F2DE8F4F59FB4BD7BB2E99F /* pwd2key.c */,
+				334B659AF02EC44221A0C3455C052B5A /* pwd2key.h */,
+				2FCB3B2D8DEB73AFF15AF52F45B6D0B0 /* sha1.c */,
+				9BE6E36F9C4272E2D2905850D0078645 /* sha1.h */,
+				66EB589511D2199FCAE43D73DA193FCB /* SSZipArchive.h */,
+				2123270D3A4C35F48535EE9778479ED4 /* SSZipArchive.m */,
+				8FD9BE6480B921786323347FE41400FC /* SSZipCommon.h */,
+				29D383E209F3E06A9DB4A6074A04C8C1 /* unzip.c */,
+				1A8CDCE63D64DDFA33D55E820D0D9FA7 /* unzip.h */,
+				350ADD520C4800847B412ED2A3C22989 /* zip.c */,
+				EACB29D250D943594182C8B3E483DAAD /* zip.h */,
+				CFEDF2D3B9E940140ED8133E407403A0 /* ZipArchive.h */,
+				856693234ADA90669B47EF060052EC69 /* Support Files */,
+			);
+			name = SSZipArchive;
+			path = SSZipArchive;
+			sourceTree = "<group>";
+		};
+		9CA7E620FD21B5AAE8BE87BB5196521A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5FA26E3D2146F3DC09BCBE214A0A6B11 /* SDRecordButton */,
+				8ACA57C3731C4995091B5AB8155839E1 /* SSZipArchive */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5E0D919E635D23B70123790B8308F8EF /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F1C4568B7279D53971973B3FD0B6820F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F0A51315786702862E3476AAD022B6F3 /* Pods_VideoApp.framework */,
+				DA9A9D3DF944E9BD23B393A6F8A8B106 /* Pods_VideoAppTests.framework */,
+				C484C928F7B5FB0EFED9A4F202236176 /* Pods_VideoAppUITests.framework */,
+				C29B6BC94D422DAAFE79EEEA606449FB /* SDRecordButton.framework */,
+				B7EAD391AD62B196F96C3C9660BA72C9 /* SSZipArchive.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FDC8399D36DE87D653D212A42B6CE8D8 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				725F46D03AB3E4093F4A0A7BE234AD07 /* Pods-VideoApp */,
+				7CCC26A3383665CEACB0D4F78AD543DD /* Pods-VideoAppTests */,
+				4302785D507657FBE5026CAF057C1793 /* Pods-VideoAppUITests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		1039B385FB268E582CACBEDB26FD3C38 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				80D3F273614B20FDCD1725205AD6CF02 /* aes.h in Headers */,
+				7B068BD8FDFD27AA1413ED7DF00F49F6 /* aes_ni.h in Headers */,
+				68C6E9863DD38B181E2E382290195AE3 /* aesopt.h in Headers */,
+				1B7425FF388F695D65A9E48DDFA6A1F5 /* aestab.h in Headers */,
+				F733CE773587AC5D17508BE61A90D406 /* brg_endian.h in Headers */,
+				A2719BF865265198FC7E7F199457C9BA /* brg_types.h in Headers */,
+				79FE97D388BD347F3E430EEA04099349 /* crypt.h in Headers */,
+				264695348227BAB2EB45F39203B7D162 /* fileenc.h in Headers */,
+				F47FAB5B6952F8608D37ED50C24CCF91 /* hmac.h in Headers */,
+				2681330E0C88134C1740146E1521016D /* ioapi.h in Headers */,
+				E982E24E2B1722E9212FD6DB1D907E42 /* ioapi_buf.h in Headers */,
+				C921FD1854D9261DD9195BB85CF75898 /* ioapi_mem.h in Headers */,
+				650F564CA7B588E4DA1D662C59A6EB87 /* minishared.h in Headers */,
+				60BF948F2B838B9B5FB94B05632645E8 /* prng.h in Headers */,
+				B8A1DBD650F08385F00EA46C3E4DB16B /* pwd2key.h in Headers */,
+				894A8EA3F192013B5A4E1D7CF37E0563 /* sha1.h in Headers */,
+				3AB5AAB6D43687E71AE14795BE8B3410 /* SSZipArchive-umbrella.h in Headers */,
+				DBE3A27243093E65412D2916A6507CA3 /* SSZipArchive.h in Headers */,
+				555D9EC6A68C8BBCA3AFEDB88D0C4CFF /* SSZipCommon.h in Headers */,
+				EAB95B73FA4CAAA7FDAF9CD7F303C1BF /* unzip.h in Headers */,
+				E83D38ECA67DBD54BB5814EF8FDECF86 /* zip.h in Headers */,
+				53C9DA13BAEF30CACA6C43FAB5117F81 /* ZipArchive.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1FEB8DC63D0E655972D512C3E59E2736 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				57C78870540D53916BD4978A64EFFA6F /* Pods-VideoAppUITests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4E32982109EB5AE548DB50E87173F481 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D052A6F9636D618BED38D9D8063FAA67 /* SDRecordButton-umbrella.h in Headers */,
+				66751A489BE680EA1301914D0FF90564 /* SDRecordButton.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8B795530C251CE09B3D3562596673F72 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3A5DC9EC2908E13AC9986A9D39ABE71F /* Pods-VideoAppTests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CFF6FA808CD835189ACDE01E914DA526 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EB08705043E6EECA0DC7433E559A8468 /* Pods-VideoApp-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		3DC5C6B5442620EC81274A12F84730A5 /* Pods-VideoApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D0FEB695AC6331697456A38D75615760 /* Build configuration list for PBXNativeTarget "Pods-VideoApp" */;
+			buildPhases = (
+				CFF6FA808CD835189ACDE01E914DA526 /* Headers */,
+				D0C92F82425DF9F4F87DB7FD5ADCD8A8 /* Sources */,
+				F302D1B6DD2AFDF045E86CF5998EFE01 /* Frameworks */,
+				BE320231AD8E3E9BE2D991CAEC998C8A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0A208A5C1E2FEC8DB40D7AEA6C66ECF8 /* PBXTargetDependency */,
+				4B66CCD01E1B269A3964D80F3D6D3231 /* PBXTargetDependency */,
+			);
+			name = "Pods-VideoApp";
+			productName = "Pods-VideoApp";
+			productReference = F0A51315786702862E3476AAD022B6F3 /* Pods_VideoApp.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		3FC5E1DC103615CB3E421B91C0442693 /* SSZipArchive */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F5E6C77AB15940468A4CDBD1D76237E3 /* Build configuration list for PBXNativeTarget "SSZipArchive" */;
+			buildPhases = (
+				1039B385FB268E582CACBEDB26FD3C38 /* Headers */,
+				0A752009C12111F651C507A4E6F081EE /* Sources */,
+				E795A1AE8107D363567B343294567D87 /* Frameworks */,
+				AB29F10DB2DABECBC0B1B41BD2EDD67A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SSZipArchive;
+			productName = SSZipArchive;
+			productReference = B7EAD391AD62B196F96C3C9660BA72C9 /* SSZipArchive.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		6972EB71B95E6C8478E98961E97C4A70 /* Pods-VideoAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3E60BBD83B48FB366C9A7A8465CA4214 /* Build configuration list for PBXNativeTarget "Pods-VideoAppTests" */;
+			buildPhases = (
+				8B795530C251CE09B3D3562596673F72 /* Headers */,
+				A3C0AB918383F6737F7524391CF3729C /* Sources */,
+				25F20549F58152D8D91B370EDB401263 /* Frameworks */,
+				AE4A6D94AD99524AE840B644AA4DD360 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3100753FA1A7EBFE4315BA59602906A9 /* PBXTargetDependency */,
+			);
+			name = "Pods-VideoAppTests";
+			productName = "Pods-VideoAppTests";
+			productReference = DA9A9D3DF944E9BD23B393A6F8A8B106 /* Pods_VideoAppTests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		9700EE76589080704621A7A97E1AB8B7 /* SDRecordButton */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EDEFCBC115949DE15B32A1C72280296D /* Build configuration list for PBXNativeTarget "SDRecordButton" */;
+			buildPhases = (
+				4E32982109EB5AE548DB50E87173F481 /* Headers */,
+				FD049862469DABE66D792AB63DF76535 /* Sources */,
+				154600D1696D9A6FA9AAE63C1C436F68 /* Frameworks */,
+				43930638B9C888F18091A235177B0BF9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SDRecordButton;
+			productName = SDRecordButton;
+			productReference = C29B6BC94D422DAAFE79EEEA606449FB /* SDRecordButton.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		E39E932A31AA66448E131E2B3ABC00B6 /* Pods-VideoAppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 27E12F5C0AE14686DBB04A1851D4D56C /* Build configuration list for PBXNativeTarget "Pods-VideoAppUITests" */;
+			buildPhases = (
+				1FEB8DC63D0E655972D512C3E59E2736 /* Headers */,
+				216B8FAF819E7A9CD1DCBE2AB99DE7B2 /* Sources */,
+				B297C3728DD5D7A8B5A6E464A095101A /* Frameworks */,
+				C9498F8A6A2500B45BCCF127029FDB63 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E5A2419678263C1EED85F52C12CC4D8A /* PBXTargetDependency */,
+			);
+			name = "Pods-VideoAppUITests";
+			productName = "Pods-VideoAppUITests";
+			productReference = C484C928F7B5FB0EFED9A4F202236176 /* Pods_VideoAppUITests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0930;
+				LastUpgradeCheck = 0930;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = F1C4568B7279D53971973B3FD0B6820F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3DC5C6B5442620EC81274A12F84730A5 /* Pods-VideoApp */,
+				6972EB71B95E6C8478E98961E97C4A70 /* Pods-VideoAppTests */,
+				E39E932A31AA66448E131E2B3ABC00B6 /* Pods-VideoAppUITests */,
+				9700EE76589080704621A7A97E1AB8B7 /* SDRecordButton */,
+				3FC5E1DC103615CB3E421B91C0442693 /* SSZipArchive */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		43930638B9C888F18091A235177B0BF9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AB29F10DB2DABECBC0B1B41BD2EDD67A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AE4A6D94AD99524AE840B644AA4DD360 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BE320231AD8E3E9BE2D991CAEC998C8A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C9498F8A6A2500B45BCCF127029FDB63 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0A752009C12111F651C507A4E6F081EE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D1751437A331E5ABA22F1DB93C2F9D43 /* aes_ni.c in Sources */,
+				815E61870CAB4C338E0B7A10231DEB17 /* aescrypt.c in Sources */,
+				6854A4ED1328068C27FA77C263E98E62 /* aeskey.c in Sources */,
+				5592710749D2911CFE57E63AB615CA88 /* aestab.c in Sources */,
+				C28DAD77382266EE6F69929D6C49CDB8 /* crypt.c in Sources */,
+				F39C9896C8B3AA07C2A1113EC6245B7C /* fileenc.c in Sources */,
+				E2CE8D1AD50848DCBDC6C4FBF204DE58 /* hmac.c in Sources */,
+				7D3C1DA9E11E591AB9F5892A0575B0B6 /* ioapi.c in Sources */,
+				8F8E15C26B2F07E886E8F4323AF7CAD7 /* ioapi_buf.c in Sources */,
+				9D11E501132FBCDD06BC03B20E3D4C0C /* ioapi_mem.c in Sources */,
+				F36DA9CF4B1EB44E8E09DDE5EA9150F6 /* minishared.c in Sources */,
+				A0853E055B666FB1F87401C5B1B9BB61 /* prng.c in Sources */,
+				670E299042C8102DC7EC1FD6F5B73D85 /* pwd2key.c in Sources */,
+				AC470F52C6AEEE95EF338559AF600615 /* sha1.c in Sources */,
+				D121A22954AB895E20B7B30EF0641F2E /* SSZipArchive-dummy.m in Sources */,
+				FC99D710D734E1C8B17D36AE3C51DC6D /* SSZipArchive.m in Sources */,
+				546DE8F383CAC8A0391BEAAB2963C853 /* unzip.c in Sources */,
+				624DE135EEA68996DA27E014B4F3EDAC /* zip.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		216B8FAF819E7A9CD1DCBE2AB99DE7B2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				15A373B42C5C2223C912E7BF1917CB5D /* Pods-VideoAppUITests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A3C0AB918383F6737F7524391CF3729C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C7AB09728BF31321EAACC76FC884212C /* Pods-VideoAppTests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D0C92F82425DF9F4F87DB7FD5ADCD8A8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				70274B5D89135040034CE239355CD46E /* Pods-VideoApp-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FD049862469DABE66D792AB63DF76535 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				74A7D50401C4ED2D5846DC71EEA463E4 /* SDRecordButton-dummy.m in Sources */,
+				09904B12D995CCC33DF5CECE9231A547 /* SDRecordButton.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0A208A5C1E2FEC8DB40D7AEA6C66ECF8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SDRecordButton;
+			target = 9700EE76589080704621A7A97E1AB8B7 /* SDRecordButton */;
+			targetProxy = 143F915B2F8620385C4CCCD483BE1000 /* PBXContainerItemProxy */;
+		};
+		3100753FA1A7EBFE4315BA59602906A9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-VideoApp";
+			target = 3DC5C6B5442620EC81274A12F84730A5 /* Pods-VideoApp */;
+			targetProxy = 994B6FA574E4D166244A16024CC4806D /* PBXContainerItemProxy */;
+		};
+		4B66CCD01E1B269A3964D80F3D6D3231 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SSZipArchive;
+			target = 3FC5E1DC103615CB3E421B91C0442693 /* SSZipArchive */;
+			targetProxy = 0E1068C301C37FCAB24CB7AA93A41EDF /* PBXContainerItemProxy */;
+		};
+		E5A2419678263C1EED85F52C12CC4D8A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-VideoApp";
+			target = 3DC5C6B5442620EC81274A12F84730A5 /* Pods-VideoApp */;
+			targetProxy = 732138A9F6B8473C01ABFFC680575850 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		067BC86A2CE5ECDCE68A8C3BCABDE85D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0DAFFE3AA3A1E6705384E9C9D4505058 /* Pods-VideoAppUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-VideoAppUITests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-VideoAppUITests/Pods-VideoAppUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		1CE0DBBC91EEA5D3ECA7F0235782439A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 09E0E5EAED5B0F0872F8E0329133F73E /* Pods-VideoAppUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-VideoAppUITests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-VideoAppUITests/Pods-VideoAppUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		209756E3C1023951DF9FC435FEEC362B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 445E29B3F6A069BD1150A195D348F4BB /* Pods-VideoApp.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-VideoApp/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-VideoApp/Pods-VideoApp.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		4EAAA72235F104057F6E584E9EC7D3EB /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5F3C6B3DA058531F9FE717AE1D6E397B /* Pods-VideoApp.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-VideoApp/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-VideoApp/Pods-VideoApp.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		54371BB6E1FB9FF31B7048C88B7C0B9A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E4C54F16AB79F0E10061C1F34D23654C /* SDRecordButton.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/SDRecordButton/SDRecordButton-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SDRecordButton/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/SDRecordButton/SDRecordButton.modulemap";
+				PRODUCT_MODULE_NAME = SDRecordButton;
+				PRODUCT_NAME = SDRecordButton;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		69FEC5C73E6452CC6DCAFEEEB57C1111 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E26F37168C2A6B8E5FB71BF1DC46234B /* SSZipArchive.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/SSZipArchive/SSZipArchive-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SSZipArchive/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/SSZipArchive/SSZipArchive.modulemap";
+				PRODUCT_MODULE_NAME = SSZipArchive;
+				PRODUCT_NAME = SSZipArchive;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		6A3E1F8E1F07F266455AD8F0F97F4821 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E4C54F16AB79F0E10061C1F34D23654C /* SDRecordButton.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/SDRecordButton/SDRecordButton-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SDRecordButton/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/SDRecordButton/SDRecordButton.modulemap";
+				PRODUCT_MODULE_NAME = SDRecordButton;
+				PRODUCT_NAME = SDRecordButton;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		9CB17330154139250DFF202F21C4E1CE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E26F37168C2A6B8E5FB71BF1DC46234B /* SSZipArchive.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/SSZipArchive/SSZipArchive-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SSZipArchive/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/SSZipArchive/SSZipArchive.modulemap";
+				PRODUCT_MODULE_NAME = SSZipArchive;
+				PRODUCT_NAME = SSZipArchive;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		C92782E717C52E3633C9A5F211E7987A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		DDD9ACB0B7837F47FECBC264EB38CE60 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E29DE15AB80AF46A5B072949D69F9D4E /* Pods-VideoAppTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-VideoAppTests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-VideoAppTests/Pods-VideoAppTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		EA8C7AF90938697605468604B2A17B9F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		F28DD3D009CC6480EAF042AAD4865584 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 79B2D5023361265332732739DC1CDE80 /* Pods-VideoAppTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-VideoAppTests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-VideoAppTests/Pods-VideoAppTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		27E12F5C0AE14686DBB04A1851D4D56C /* Build configuration list for PBXNativeTarget "Pods-VideoAppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1CE0DBBC91EEA5D3ECA7F0235782439A /* Debug */,
+				067BC86A2CE5ECDCE68A8C3BCABDE85D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C92782E717C52E3633C9A5F211E7987A /* Debug */,
+				EA8C7AF90938697605468604B2A17B9F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3E60BBD83B48FB366C9A7A8465CA4214 /* Build configuration list for PBXNativeTarget "Pods-VideoAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DDD9ACB0B7837F47FECBC264EB38CE60 /* Debug */,
+				F28DD3D009CC6480EAF042AAD4865584 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D0FEB695AC6331697456A38D75615760 /* Build configuration list for PBXNativeTarget "Pods-VideoApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				209756E3C1023951DF9FC435FEEC362B /* Debug */,
+				4EAAA72235F104057F6E584E9EC7D3EB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EDEFCBC115949DE15B32A1C72280296D /* Build configuration list for PBXNativeTarget "SDRecordButton" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6A3E1F8E1F07F266455AD8F0F97F4821 /* Debug */,
+				54371BB6E1FB9FF31B7048C88B7C0B9A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F5E6C77AB15940468A4CDBD1D76237E3 /* Build configuration list for PBXNativeTarget "SSZipArchive" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9CB17330154139250DFF202F21C4E1CE /* Debug */,
+				69FEC5C73E6452CC6DCAFEEEB57C1111 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}

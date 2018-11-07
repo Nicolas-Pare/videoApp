@@ -7,6 +7,9 @@ target 'VideoApp' do
   # Pods for VideoApp
     pod "SDRecordButton"
     pod 'SSZipArchive'
+    pod 'rebekka', '~> 1.0'
+    pod 'NMSSH'
+    pod 'FilesProvider'
 
   target 'VideoAppTests' do
     inherit! :search_paths

@@ -143,12 +143,18 @@ strip_invalid_archs() {
 
 
 if [[ "$CONFIGURATION" == "Debug" ]]; then
+  install_framework "${BUILT_PRODUCTS_DIR}/FilesProvider/FilesProvider.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/NMSSH/NMSSH.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/SDRecordButton/SDRecordButton.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/SSZipArchive/SSZipArchive.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/rebekka/rebekka.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
+  install_framework "${BUILT_PRODUCTS_DIR}/FilesProvider/FilesProvider.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/NMSSH/NMSSH.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/SDRecordButton/SDRecordButton.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/SSZipArchive/SSZipArchive.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/rebekka/rebekka.framework"
 fi
 if [ "${COCOAPODS_PARALLEL_CODE_SIGN}" == "true" ]; then
   wait

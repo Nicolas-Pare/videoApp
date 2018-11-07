@@ -11,6 +11,9 @@ import AVFoundation
 import MessageUI
 import SDRecordButton
 import Photos
+import rebekka
+import NMSSH
+import FilesProvider
 //import SSZipArchive
 
 class videoViewController: UIViewController, AVCaptureFileOutputRecordingDelegate, MFMailComposeViewControllerDelegate {
@@ -18,6 +21,16 @@ class videoViewController: UIViewController, AVCaptureFileOutputRecordingDelegat
     @IBOutlet weak var camPreview: UIView!
     let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
     
+    //FTPS server related variable
+    //let server: URL = URL(string: "ftp://acs.radio-canada.ca:21")!
+    let username = "voxpop2"
+    let password = "popcorn123"
+    var webdav: WebDAVFileProvider?
+    var ftpFileProvider: FTPFileProvider?
+    var videoSaveName = "video1.mov"
+    var nameCounter = 1
+    
+    //capture session related variable
     let captureSession = AVCaptureSession()
     let videoOutput = AVCaptureMovieFileOutput()
     let cameraButton = UIView()
@@ -32,6 +45,8 @@ class videoViewController: UIViewController, AVCaptureFileOutputRecordingDelegat
     @IBOutlet weak var sendBtn: UIButton!
     @IBOutlet weak var removableImage: UIImageView!
     @IBOutlet weak var removableLabel: UILabel!
+    @IBOutlet weak var transferLabel: UITextField!
+    
     var isRecording = false
     var previewLayer:AVCaptureVideoPreviewLayer!
     var captureDevice:AVCaptureDevice! = nil
@@ -53,13 +68,6 @@ class videoViewController: UIViewController, AVCaptureFileOutputRecordingDelegat
         
         let recordBtnfirstTouch = UITapGestureRecognizer(target: self, action: #selector(videoViewController.recording))
         
-        /* check this for action reference for exemple project
-        [self.recordButton addTarget:self action:@selector(recording) forControlEvents:UIControlEventTouchDown];
-        [self.recordButton addTarget:self action:@selector(pausedRecording) forControlEvents:UIControlEventTouchUpInside];
-        [self.recordButton addTarget:self action:@selector(pausedRecording) forControlEvents:UIControlEventTouchUpOutside];
-        */
-        //cameraButton.addGestureRecognizer(cameraButtonRecognizer)
-        
         cameraButton.frame = CGRect(x: 0, y: 0, width: 100, height: 100)
         
         cameraButton.backgroundColor = UIColor.red
@@ -72,11 +80,19 @@ class videoViewController: UIViewController, AVCaptureFileOutputRecordingDelegat
         restartBtn.isHidden = true
         sendBtn.isHidden = true
         
+        transferLabel.isHidden = true
+        
         camPreview.addSubview(recordButton)
         camPreview.addSubview(removableLabel)
         camPreview.addSubview(removableImage)
+        
+        /*let credential = URLCredential(user: username, password: password, persistence: .permanent)
+        print(credential.user)
+        print(credential.password)
+        print(credential.persistence.rawValue)
+        webdav = WebDAVFileProvider(baseURL: server, credential: credential)
+        webdav?.delegate = self as FileProviderDelegate*/
     }
-    
     
     func checkOrientation(){
         Currentorientation = currentVideoOrientation()
@@ -132,6 +148,49 @@ class videoViewController: UIViewController, AVCaptureFileOutputRecordingDelegat
         print("in save video -------&")
         print(outputURL)
         let output = outputURL as URL
+        waitingSetup()
+        //sendDataToServer(output)
+        /*let session = NMSSHSession.init(host: "ftp://nova.oriaks.com:21", andUsername: username)
+        session.connect()
+        print("befor connection")
+        if session.isConnected{
+            print("if connected")
+            session.authenticate(byPassword: password)
+            if session.isAuthorized == true {
+                print("if authorized")
+                let sftpsession = NMSFTP(session: session)
+                sftpsession.connect()
+                if sftpsession.isConnected {
+                    print("if sftp is connected")
+                    
+                    sftpsession.writeFile(atPath: outputURL.path, toFileAtPath: "/tmp/video.mov")
+                }
+            }
+        }*/
+        
+        var configuration = SessionConfiguration()
+        configuration.host = "acs.radio-canada.ca"
+        configuration.username = username
+        configuration.password = password
+        configuration.encoding = String.Encoding.utf8
+        let _session = Session(configuration: configuration)
+        _session.list("/voxpop/") {
+            (resources, error) -> Void in
+            print("List directory with result:\n\(String(describing: resources)), error: \(String(describing: error))\n\n")
+            var videoUrl = self.outputURL
+            for file in resources!{
+                print("entering for loop in ftp file")
+                print("the video name is currently equal to:\(self.videoSaveName)")
+                print("the current vile name is equal to:\(String(file.name))")
+                print("entering if in ftp file")
+                self.nameCounter = self.nameCounter + 1
+                print("new counter value is:\(self.nameCounter)")
+                self.videoSaveName = "video\(self.nameCounter).mov"
+                print("new name value is:\(self.videoSaveName)")
+            }
+            self.uploadToFtp(_session)
+        }
+        
         PHPhotoLibrary.shared().performChanges({
             PHAssetChangeRequest.creationRequestForAssetFromVideo(atFileURL: output)
         }) { saved, error in
@@ -143,8 +202,25 @@ class videoViewController: UIViewController, AVCaptureFileOutputRecordingDelegat
                 
             }
         }
-        outputURL = nil
-        performSegue(withIdentifier: "videoToThanks", sender: nil)
+        //performSegue(withIdentifier: "videoToThanks", sender: nil)
+        //modif
+    }
+    func waitingSetup(){
+        restartBtn.isHidden = true
+        sendBtn.isHidden = true
+        transferLabel.isHidden = false
+    }
+    func uploadToFtp(_ session:Session){
+        let path = "/voxpop/\(videoSaveName)"
+        print("the path value is: \(path)")
+        //let _session = Session(configuration: configuration)
+        session.upload(outputURL!, path: path) {
+            (result, error) -> Void in
+            print("Upload file with result:\n\(result), error: \(error)\n\n")
+            self.outputURL = nil
+            self.transferLabel.isHidden = true
+            self.performSegue(withIdentifier: "videoToThanks", sender: nil)
+        }
     }
     
     @IBAction func restartCapture(_ sender: Any) {
@@ -473,27 +549,41 @@ class videoViewController: UIViewController, AVCaptureFileOutputRecordingDelegat
         }
     }
     
-    func mailComposeController(_ controller: MFMailComposeViewController, didFinishWith result: MFMailComposeResult, error: Error?) {
-        print("mailComposeController")
-        controller.dismiss(animated: true, completion: nil)
-        //performSegue(withIdentifier: "backToPermission", sender: nil)
-        self.performSegue(withIdentifier:"videoToThanks", sender: self)
-    }
-    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+}
+extension videoViewController: FileProviderDelegate {
+    func fileproviderSucceed(_ fileProvider: FileProviderOperations, operation: FileOperationType) {
+        switch operation {
+        case .copy(source: let source, destination: let dest):
+            print("\(source) copied to \(dest).")
+        case .remove(path: let path):
+            print("\(path) has been deleted.")
+        default:
+            print("\(operation.actionDescription) from \(operation.source) to \(String(describing: operation.destination)) succeed")
+        }
     }
-    */
-
+    
+    func fileproviderFailed(_ fileProvider: FileProviderOperations, operation: FileOperationType, error: Error) {
+        switch operation {
+        case .copy(source: let source, destination: let dest):
+            print("copy of \(source) failed. huh? \(dest)")
+        case .remove:
+            print("file can't be deleted.")
+        default:
+            print("\(operation.actionDescription) from \(operation.source) to \(String(describing: operation.destination)) failed")
+        }
+    }
+    
+    func fileproviderProgress(_ fileProvider: FileProviderOperations, operation: FileOperationType, progress: Float) {
+        switch operation {
+        case .copy(source: let source, destination: let dest):
+            print("Copy\(source) to \(dest): \(progress * 100) completed.")
+        default:
+            break
+        }
+    }
 }

@@ -179,6 +179,7 @@ class videoViewController: UIViewController, AVCaptureFileOutputRecordingDelegat
                 
             }
         }
+        self.outputURL = nil
         performSegue(withIdentifier: "videoToThanks", sender: nil)
         //modif
     }

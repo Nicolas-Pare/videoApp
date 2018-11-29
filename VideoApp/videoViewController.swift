@@ -86,12 +86,6 @@ class videoViewController: UIViewController, AVCaptureFileOutputRecordingDelegat
         camPreview.addSubview(removableLabel)
         camPreview.addSubview(removableImage)
         
-        /*let credential = URLCredential(user: username, password: password, persistence: .permanent)
-        print(credential.user)
-        print(credential.password)
-        print(credential.persistence.rawValue)
-        webdav = WebDAVFileProvider(baseURL: server, credential: credential)
-        webdav?.delegate = self as FileProviderDelegate*/
     }
     
     func checkOrientation(){
@@ -149,25 +143,8 @@ class videoViewController: UIViewController, AVCaptureFileOutputRecordingDelegat
         print(outputURL)
         let output = outputURL as URL
         waitingSetup()
-        //sendDataToServer(output)
-        /*let session = NMSSHSession.init(host: "ftp://nova.oriaks.com:21", andUsername: username)
-        session.connect()
-        print("befor connection")
-        if session.isConnected{
-            print("if connected")
-            session.authenticate(byPassword: password)
-            if session.isAuthorized == true {
-                print("if authorized")
-                let sftpsession = NMSFTP(session: session)
-                sftpsession.connect()
-                if sftpsession.isConnected {
-                    print("if sftp is connected")
-                    
-                    sftpsession.writeFile(atPath: outputURL.path, toFileAtPath: "/tmp/video.mov")
-                }
-            }
-        }*/
-        
+
+        /*
         var configuration = SessionConfiguration()
         configuration.host = "acs.radio-canada.ca"
         configuration.username = username
@@ -189,7 +166,7 @@ class videoViewController: UIViewController, AVCaptureFileOutputRecordingDelegat
                 print("new name value is:\(self.videoSaveName)")
             }
             self.uploadToFtp(_session)
-        }
+        }*/
         
         PHPhotoLibrary.shared().performChanges({
             PHAssetChangeRequest.creationRequestForAssetFromVideo(atFileURL: output)
@@ -202,7 +179,7 @@ class videoViewController: UIViewController, AVCaptureFileOutputRecordingDelegat
                 
             }
         }
-        //performSegue(withIdentifier: "videoToThanks", sender: nil)
+        performSegue(withIdentifier: "videoToThanks", sender: nil)
         //modif
     }
     func waitingSetup(){
@@ -354,8 +331,6 @@ class videoViewController: UIViewController, AVCaptureFileOutputRecordingDelegat
         
     }
     
-    //EDIT 1: I FORGOT THIS AT FIRST
-    
     func tempURL() -> URL? {
         print("temp URL generated")
         let directory = NSTemporaryDirectory() as NSString
@@ -369,18 +344,6 @@ class videoViewController: UIViewController, AVCaptureFileOutputRecordingDelegat
         return nil
     }
     
-    /*func tempZipPath() -> String {
-        print("temp URL generated")
-        let directory = NSTemporaryDirectory() as NSString
-     
-        if directory != "" {
-            let path = directory.appendingPathComponent(NSUUID().uuidString + ".zip")
-            print(path)
-            return path
-        }
-     
-        return ""
-    }*/
     private func updatePreviewLayer(layer: AVCaptureConnection, orientation: AVCaptureVideoOrientation) {
         let connection = videoOutput.connection(with: AVMediaType.video)
         previewLayer.connection?.videoOrientation = orientation
@@ -455,7 +418,7 @@ class videoViewController: UIViewController, AVCaptureFileOutputRecordingDelegat
                 
             }
             
-            //EDIT2: And I forgot this
+            
             outputURL = tempURL()
             videoOutput.startRecording(to: outputURL, recordingDelegate: self)
             
@@ -463,7 +426,6 @@ class videoViewController: UIViewController, AVCaptureFileOutputRecordingDelegat
         else {
             print("call stop recording")
             stopRecording()
-            //sendEmail()
         }
         
     }
@@ -475,10 +437,7 @@ class videoViewController: UIViewController, AVCaptureFileOutputRecordingDelegat
             videoOutput.stopRecording()
         }
     }
-    /*func fileOutput(_ output: AVCaptureFileOutput, didFinishRecordingTo outputFileURL: URL, from connections: [AVCaptureConnection], error: Error?) {
-     print("didFinishRecording?")
-     sendEmail()
-     }*/
+    
     func fileOutput(_ captureOutput: AVCaptureFileOutput, didStartRecordingTo fileURL: URL, from connections: [AVCaptureConnection]) {
         print("didStartRecordingToOutputFileAt")
     }
